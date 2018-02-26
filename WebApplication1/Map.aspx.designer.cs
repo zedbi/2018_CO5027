@@ -7,9 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1 {
-    
-    
-    public partial class About1 {
+namespace WebApplication1
+{
+
+
+    public partial class Map
+    {
     }
 }
