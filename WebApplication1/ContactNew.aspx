@@ -1,14 +1,14 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="WebApplication1.Contact"  %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ContactNew.aspx.cs" Inherits="WebApplication1.ContactNew" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
-    Contact: My new website
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
-    Contact
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Heading2" runat="server">
-    Contact / Profile
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Content" runat="server">
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="GoogleMap" runat="server">
+</asp:Content>
     
     <form id="form1" runat="server">
 <p>
@@ -93,5 +93,3 @@ A contact form that collect at minium a user's name, email address and a message
         --%>
 
 </asp:Content>
-
-

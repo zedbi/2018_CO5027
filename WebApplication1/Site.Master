@@ -10,6 +10,23 @@
 
 </title>
 <link href="~/css/Styles.css" rel="stylesheet" type="text/css">
+
+
+     <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+
 </head>
 
 <body runat="server">
@@ -28,9 +45,10 @@
 <ul style="width: 117px">
 <li><a href="~/HomePage.aspx" runat="server">Home</a></li>
 <li><a href="~/About.aspx" runat="server">About</a></li>
-<li><a href="~/SigninPage.aspx" runat="server">Sign-in Register Page</a></li>
+<li><a href="~/SigninPage.aspx" runat="server">Sign-in </a></li>
 <li><a href="~/Contact.aspx" runat="server">Contact Page</a></li>
 <li><a href="~/Map.aspx" runat="server">Location</a></li>
+<li><a href="~/Register.aspx" runat="server">Register</a></li>
 
 
 </ul>
@@ -44,8 +62,14 @@
 
     <asp:ContentPlaceHolder ID ="Content" runat="server">
     </asp:ContentPlaceHolder>
+
+
 </div>
 </div>
+    <%-- must be after div not inside div --%>
+    <asp:ContentPlaceHolder ID ="GoogleMap" runat="server">
+    </asp:ContentPlaceHolder>
+
 </body>
 
 </html>

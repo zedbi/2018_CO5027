@@ -11,30 +11,22 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="Content" runat="server">
     
     <form id="form1" runat="server">
-    <table><tr><td>
+   
     <p style="height: 80px"> Sign in experigus marigarus liartirus description here. </p>
         <p style="height: 332px; width: 122px;">
             Sign in&nbsp;<asp:Image ID="Image1" runat="server" Height="109px" Width="119px" />
+           
+             <asp:Label ID="Label1" runat="server" Text="Username"></asp:Label>
+        <asp:TextBox ID="txtLoginEmail" runat="server"></asp:TextBox>
 
-            Username<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            Password<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-            <asp:Button ID="Button1" runat="server" Text="Sign In" />
+                    <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
+        <asp:TextBox ID="TxtLoginPassword" runat="server" TextMode="Password"></asp:TextBox>
+
+            <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click"  /><br/>
+            <asp:Literal ID="litLoginError" runat="server"></asp:Literal>
    </p>
-        </td><td>
-            <p style="height: 80px"> Register Here experigus marigarus liartirus description here.</p>
-        <p style="height: 332px; width: 131px;">
-            Register&nbsp;&nbsp;<asp:Image ID="Image2" runat="server" Height="109px" Width="119px" />
+       
 
-            Username :<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-            Email :<asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-&nbsp; Create Password :<asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
-            Checking Password<asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
-            <asp:Button ID="Button2" runat="server" Text="Register" />
-   </p>
-
-             </td>
-        </tr>
-        </table>
 
     </form>
 
